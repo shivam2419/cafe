@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="order.css" />
+    <script src="order.js"></script>
+    <title>Document</title>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="nav">
+      <div class="container-fluid">
+        <img src="tea1.png" height="30" />
+        &nbsp;&nbsp;
+        <a class="navbar-brand" href="#">TheGenuineCafe</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" tabindex="-1">About Us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                More
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Menu</a></li>
+                <li><a class="dropdown-item" href="#">Our Story</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Location & Adrress</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <button class="btn btn-success" type="submit" id="btn1">
+              Order
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!--
+      <div class="form1">
+        <h2>The Genuine Cafe</h2>
+        <input type="text" placeholder='Enter name'>
+        <br><br>
+        <input type="Email" placeholder='Email adderss'><br><br>
+        <input type="number" value=0 placeholder='Phone number'><br><br>
+        <input type="text" placeholder='Address'>
+        <br><br>
+        <input type="submit" value="Submit">
+      </div>
+      -->
+    <div class="upmiddle">
+      <h1>MENU</h1>
+      <span>
+        <ul>
+          <img src="menu2.jpg" alt="" />
+          <img src="menu4.jpg" alt="" />
+          <img src="menu3.jpg" alt="" />
+        </ul>
+      </span>
+    </div>
+    <div class="middle">
+      <h1>Order Chart -></h1>
+      <form action="">
+        <div class="k1">
+          <div class="c_chai" style="width: 20rem" id="card">
+            <img
+              class="card-img-top"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXfyT_Cr3070FdK-Ci8ycFkJav9iQ2rRpUBQ&usqp=CAU"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Chai</h5>
+              <p>
+                <span>
+                  <ul>
+                    <li>
+                      Chai
+                      <input
+                        type="number"
+                        value="0"
+                        placeholder="quantity"
+                        id="chai1"
+                      />
+                    </li>
+                    <li>
+                      Masala Chai<input
+                        type="number"
+                        value="0"
+                        name="25"
+                        id="chai2"
+                      />
+                    </li>
+                    <li>
+                      Adrak Chai<input
+                        type="number"
+                        value="0"
+                        name="25"
+                        id="chai3"
+                      />
+                    </li>
+                    <li>
+                      Elaichi Chai<input
+                        type="number"
+                        value="0"
+                        name="25"
+                        id="chai4"
+                      />
+                    </li>
+                  </ul>
+                </span>
+              </p>
+            </div>
+          </div>
+          <!---->
+          <div class="c_burger" style="width: 20rem" id="card">
+            <img
+              class="card-img-top"
+              src="https://b.zmtcdn.com/data/pictures/chains/8/310078/45b7459433dc43e249d0dd35955a2595.jpg?fit=around|771.75:416.25&crop=771.75:416.25;*,*"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Burger's</h5>
+              <p>
+                <span>
+                  <ul>
+                    <li>
+                      Aloo tikki burger<input
+                        type="number"
+                        value="0"
+                        name="55"
+                        id="bug1"
+                      />
+                    </li>
+                    <li>
+                      Stuff burger<input
+                        type="number"
+                        value="0"
+                        name="70"
+                        id="bug2"
+                      />
+                    </li>
+                    <li>
+                      Double tikki burger<input
+                        type="number"
+                        value="0"
+                        name="70"
+                        id="bug3"
+                      />
+                    </li>
+                    <li>
+                      Grill burger<input
+                        type="number"
+                        value="0"
+                        name="80"
+                        id="bug4"
+                      />
+                    </li>
+                    <li>
+                      Paneer masala burger<input
+                        type="number"
+                        value="0"
+                        name="80"
+                        id="bug5"
+                      />
+                    </li>
+                  </ul>
+                </span>
+              </p>
+            </div>
+          </div>
+          <!---->
+          <div class="c_momos" style="width: 20rem" id="card">
+            <img
+              class="card-img-top"
+              src="https://i.ytimg.com/vi/IVM_CQvgxCg/maxresdefault.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Momo's</h5>
+              <p>
+                <span>
+                  <ul>
+                    <li>
+                      Veg Momos<input
+                        type="number"
+                        value="0"
+                        name="70"
+                        id="momo1"
+                      />
+                    </li>
+                    <li>
+                      Fry Veg Momos<input
+                        type="number"
+                        value="0"
+                        name="80"
+                        id="momo2"
+                      />
+                    </li>
+                    <li>
+                      Paneer Momos<input
+                        type="number"
+                        value="0"
+                        name="100"
+                        id="momo3"
+                      />
+                    </li>
+                    <li>
+                      Kurkure Momos<input
+                        type="number"
+                        value="0"
+                        name="110"
+                        id="momo4"
+                      />
+                    </li>
+                  </ul>
+                </span>
+              </p>
+              >
+            </div>
+          </div>
+          <!---->
+        </div>
+
+        <div class="k2">
+          <div class="c_sandwich" style="width: 20rem" id="card">
+            <img
+              class="card-img-top"
+              src="https://b.zmtcdn.com/data/pictures/7/18598867/c06e4df31442d797a2137428731916f0_o2_featured_v2.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Sandwich</h5>
+              <p>
+                <span>
+                  <ul>
+                    <li>
+                      Veg sandwich<input
+                        type="number"
+                        value="0"
+                        name="70"
+                        id="sand1"
+                      />
+                    </li>
+                    <li>
+                      Veg grill sandwich<input
+                        type="number"
+                        value="0"
+                        name="70"
+                        id="sand2"
+                      />
+                    </li>
+                    <li>
+                      Grill tikki sandwich<input
+                        type="number"
+                        value="0"
+                        name="70"
+                        id="sand3"
+                      />
+                    </li>
+                    <li>
+                      Cheese sandwich<input
+                        type="number"
+                        value="0"
+                        name="80"
+                        id="sand4"
+                      />
+                    </li>
+                    <li>
+                      Paneer sandwich<input
+                        type="number"
+                        value="0"
+                        name="100"
+                        id="sand5"
+                      />
+                    </li>
+                  </ul>
+                </span>
+              </p>
+            </div>
+          </div>
+          <!---->
+          <div class="c_pasta" style="width: 20rem" id="card">
+            <img
+              class="card-img-top"
+              src="https://www.sharmispassions.com/wp-content/uploads/2012/12/FusilliPasta8-500x375.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Pasta</h5>
+              <span>
+                <ul>
+                  <li>
+                    Red sauce pasta<input
+                      type="number"
+                      value="0"
+                      name="120"
+                      id="pasta1"
+                    />
+                  </li>
+                  <li>
+                    White sauce pasta<input
+                      type="number"
+                      value="0"
+                      name="120"
+                      id="pasta2"
+                    />
+                  </li>
+                  <li>
+                    Mix sauce pasta<input
+                      type="number"
+                      value="0"
+                      name="140"
+                      id="pasta3"
+                    />
+                  </li>
+                </ul>
+              </span>
+            </div>
+          </div>
+          <!---->
+          <div class="c_rolls" style="width: 20rem" id="card">
+            <img
+              class="card-img-top"
+              src="https://b.zmtcdn.com/data/pictures/chains/2/18349892/d19b241a9d744861a686f756a7c75c75.jpg?fit=around|771.75:416.25&crop=771.75:416.25;*,*"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Rolls</h5>
+              <span>
+                <ul>
+                  <li>
+                    Spring roll<input
+                      type="number"
+                      value="0"
+                      name=""
+                      id="roll1"
+                    />
+                  </li>
+                  <li>
+                    Veg roll<input type="number" value="0" name="" id="roll2" />
+                  </li>
+                </ul>
+              </span>
+            </div>
+          </div>
+          <!---->
+        </div>
+
+        <div class="k3">
+          <div class="c_maggie" style="width: 20rem" id="card">
+            <img
+              class="card-img-top"
+              src="https://madhurasrecipe.com/wp-content/uploads/2020/10/Masala-Maggie.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Maggie</h5>
+              <span>
+                <ul>
+                  <li>
+                    Plain Maggie<input
+                      type="number"
+                      value="0"
+                      name=""
+                      id="mag1"
+                    />
+                  </li>
+                  <li>
+                    Veg Maggie<input
+                      type="number"
+                      value="0"
+                      name=""
+                      id="mag2"
+                    />
+                  </li>
+                  <li>
+                    Butter Maggie<input
+                      type="number"
+                      value="0"
+                      name=""
+                      id="mag3"
+                    />
+                  </li>
+                  <li>
+                    2x masala Maggie<input
+                      type="number"
+                      value="0"
+                      name=""
+                      id="mag4"
+                    />
+                  </li>
+                  <li>
+                    Paneer Maggie<input
+                      type="number"
+                      value="0"
+                      name=""
+                      id="mag5"
+                    />
+                  </li>
+                </ul>
+              </span>
+            </div>
+          </div>
+          <!---->
+          <div class="c_drinks" style="width: 20rem" id="card">
+            <img
+              class="card-img-top"
+              src="https://b.zmtcdn.com/data/pictures/6/20322016/dd0fcc4ca45d62c38a913e85087754f4_o2_featured_v2.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Drinks</h5>
+              <span>
+                <ul>
+                  <li>
+                    Coconut water<input
+                      type="number"
+                      value="0"
+                      name=""
+                      id="drink1"
+                    />
+                  </li>
+                  <li>
+                    Soft drinks<input
+                      type="number"
+                      value="0"
+                      name=""
+                      id="drink2"
+                    />
+                  </li>
+                  <li>
+                    Apple Juice<input
+                      type="number"
+                      value="0"
+                      name=""
+                      id="drink3"
+                    />
+                  </li>
+                  <li>
+                    Mix Juice<input
+                      type="number"
+                      value="0"
+                      name=""
+                      id="drink4"
+                    />
+                  </li>
+                  <li>
+                    Pomegranate Juice<input
+                      type="number"
+                      value="0"
+                      name=""
+                      id="drink5"
+                    />
+                  </li>
+                  <li>
+                    Guava Juice<input
+                      type="number"
+                      value="0"
+                      name=""
+                      id="drink6"
+                    />
+                  </li>
+                </ul>
+              </span>
+            </div>
+          </div>
+          <!---->
+        </div>
+
+        <div class="k4">
+          <div class="c_paratha" style="width: 20rem" id="card">
+            <img
+              class="card-img-top"
+              src="https://b.zmtcdn.com/data/pictures/1/20446851/de8069e689e2289f41b47e03b2b71e41_o2_featured_v2.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Paratha</h5>
+              <span>
+                <ul>
+                  <li>
+                    Aloo Paratha<input
+                      type="number"
+                      value="0"
+                      name=""
+                      id="par1"
+                    />
+                  </li>
+                  <li>
+                    Onion Paratha<input
+                      type="number"
+                      value="0"
+                      name=""
+                      id="par2"
+                    />
+                  </li>
+                  <li>
+                    Aloo pyaaz Paratha<input
+                      type="number"
+                      value="0"
+                      name=""
+                      id="par3"
+                    />
+                  </li>
+                  <li>
+                    Gobhi Paratha<input
+                      type="number"
+                      value="0"
+                      name=""
+                      id="par4"
+                    />
+                  </li>
+                  <li>
+                    Paneer Paratha<input
+                      type="number"
+                      value="0"
+                      name=""
+                      id="par5"
+                    />
+                  </li>
+                  <li>
+                    Paneer pyaaz Paratha<input
+                      type="number"
+                      value="0"
+                      name=""
+                      id="par6"
+                    />
+                  </li>
+                  <li>
+                    Mix Paratha<input
+                      type="number"
+                      value="0"
+                      name=""
+                      id="par7"
+                    />
+                  </li>
+                </ul>
+              </span>
+            </div>
+          </div>
+          <!---->
+          <div class="c_chinese" style="width: 20rem" id="card">
+            <img
+              class="card-img-top"
+              src="https://rakskitchen.net/wp-content/uploads/2022/07/honey-chilli.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Chinese</h5>
+              <p>
+                <span>
+                  <ul>
+                    <li>
+                      French Fries<input
+                        type="number"
+                        value="0"
+                        name=""
+                        id="chin1"
+                      />
+                    </li>
+                    <li>
+                      Pery pery fries<input
+                        type="number"
+                        value="0"
+                        name=""
+                        id="chin2"
+                      />
+                    </li>
+                    <li>
+                      Cheese fries<input
+                        type="number"
+                        value="0"
+                        name=""
+                        id="chin3"
+                      />
+                    </li>
+                    <li>
+                      Fried rice<input
+                        type="number"
+                        value="0"
+                        name=""
+                        id="chin4"
+                      />
+                    </li>
+                    <li>
+                      Veg chomein<input
+                        type="number"
+                        value="0"
+                        name=""
+                        id="chin5"
+                      />
+                    </li>
+                    <li>
+                      Chilli potato<input
+                        type="number"
+                        value="0"
+                        name=""
+                        id="chin6"
+                      />
+                    </li>
+                    <li>
+                      Honey chilli potato<input
+                        type="number"
+                        value="0"
+                        name=""
+                        id="chin7"
+                      />
+                    </li>
+                    <li>
+                      Manchurian<input
+                        type="number"
+                        value="0"
+                        name=""
+                        id="chin8"
+                      />
+                    </li>
+                    <li>
+                      Singapuri chomein<input
+                        type="number"
+                        value="0"
+                        name=""
+                        id="chin9"
+                      />
+                    </li>
+                    <li>
+                      Hakka noodles<input
+                        type="number"
+                        value="0"
+                        name=""
+                        id="chin10"
+                      />
+                    </li>
+                  </ul>
+                </span>
+              </p>
+            </div>
+          </div>
+          <!---->
+          <div class="c_pizza" style="width: 20rem" id="card">
+            <img
+              class="card-img-top"
+              src="https://b.zmtcdn.com/data/pictures/chains/3/143/a0c3bcc09b1448a7138beda386f8db21.jpg?fit=around|771.75:416.25&crop=771.75:416.25;*,*"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Pizza</h5>
+              <p>
+                <span>
+                  <ul>
+                    <li>
+                      Onion Pizza<input
+                        type="number"
+                        value="0"
+                        name=""
+                        id="pizz1"
+                      />
+                    </li>
+                    <li>
+                      Capsicum Pizza<input
+                        type="number"
+                        value="0"
+                        name=""
+                        id="pizz2"
+                      />
+                    </li>
+                    <li>
+                      Gold corn Pizza<input
+                        type="number"
+                        value="0"
+                        name=""
+                        id="pizz3"
+                      />
+                    </li>
+                    <li>
+                      Tomato Pizza<input
+                        type="number"
+                        value="0"
+                        name=""
+                        id="pizz4"
+                      />
+                    </li>
+                    <li>
+                      Onion Caps. Pizza<input
+                        type="number"
+                        value="0"
+                        name=""
+                        id="pizz5"
+                      />
+                    </li>
+                    <li>
+                      Paneer Pizza<input
+                        type="number"
+                        value="0"
+                        name=""
+                        id="pizz6"
+                      />
+                    </li>
+                    <li>
+                      Veg delight Pizza<input
+                        type="number"
+                        value="0"
+                        name=""
+                        id="pizz7"
+                      />
+                    </li>
+                    <li>
+                      Country special Pizza<input
+                        type="number"
+                        value="0"
+                        name=""
+                        id="pizz8"
+                      />
+                    </li>
+                  </ul>
+                </span>
+              </p>
+            </div>
+          </div>
+          <!---->
+        </div>
+      </form>
+      <center>
+        <a href="#" class="btn btn-success" onclick="sub()">Submit</a>
+      </center>
+    </div>
+    <hr />
+    <div class="ans">
+      <h1>Your Total</h1>
+      <span id="sp1"></span>
+      <br />
+      <span id="sp2"></span>
+      <br />
+      <span id="sp3"></span>
+      <br />
+      <span id="sp4"></span>
+      <br />
+      <span id="sp5"></span>
+      <br />
+      <span id="sp6"></span>
+      <br />
+      <span id="sp7"></span>
+      <br />
+      <span id="sp8"></span>
+      <br />
+      <span id="sp9"> </span>
+      <br />
+      <span id="sp10"></span>
+      <br>
+      <span id="sp11"></span>
+      <br /><br />
+      <!-- A button to open the popup form -->
+      <button id="btn1" class="btn btn-success" onclick="openForm()"><a >Confirm</a></button>
+    </div>
+
+
+    <!-- The PopUp form -->
+    <div class="form-popup" id="myForm">
+      <form  class="form-container" action="" >
+        <button type="button" class="btn cancel" onclick="closeForm()">
+          x
+        </button>
+        <h1>Details</h1>
+        
+        <label for="pnum"><b>Phone Number</b></label>
+        <input type="number" placeholder="Enter Phone Number" name="pnum" id="pnum" required />
+
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" required />
+
+        <label for="address"><b>Address</b></label>
+        <input
+          type="text"
+          placeholder="Enter Address"
+          name="address"
+          required
+        />
+
+        <textarea name="" id="txtarea" cols="30" rows="10">
+
+        </textarea>
+        <button class="btn" type="submit" onclick="setCookie()">Payment Gateway</button>
+      </form>
+    </div>
+  </body>
+</html>
